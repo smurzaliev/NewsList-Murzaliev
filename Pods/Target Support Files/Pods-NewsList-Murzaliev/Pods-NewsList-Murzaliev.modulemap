@@ -1,0 +1,6 @@
+framework module Pods_NewsList_Murzaliev {
+  umbrella header "Pods-NewsList-Murzaliev-umbrella.h"
+
+  export *
+  module * { export * }
+}
