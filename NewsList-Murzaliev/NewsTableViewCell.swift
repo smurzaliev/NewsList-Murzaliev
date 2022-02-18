@@ -37,14 +37,11 @@ class NewsTableViewCell: UITableViewCell {
         return view
     }()
 
-
     override func layoutSubviews() {
-        
-        
-        setViews()
+        setSubViews()
     }
     
-    private func setViews() {
+    private func setSubViews() {
         
         addSubview(layoutScreen)
         layoutScreen.snp.makeConstraints { make in
@@ -73,7 +70,6 @@ class NewsTableViewCell: UITableViewCell {
             make.top.equalTo(newsTitle.snp.bottom).offset(1)
             make.left.equalTo(newsTitle.snp.left)
         }
-        
     }
     
     //MARK: - Метод для заполнения ячейки с помощью заданной модели
@@ -83,5 +79,4 @@ class NewsTableViewCell: UITableViewCell {
         newsTitle.text = model.newsTitle
         newsDue.text = model.newsDue
        }
-
 }
